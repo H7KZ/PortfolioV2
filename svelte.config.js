@@ -6,7 +6,13 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$lib: './src/lib',
+			$components: './src/lib/components',
+			$icons: './src/lib/icons',
+			$css: './src/lib/css'
+		}
 	},
 	preprocess: [
 		preprocess({

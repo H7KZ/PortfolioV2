@@ -9,3 +9,62 @@
 .gradient-header {
 	background: linear-gradient(91.87deg, #e30b0b -12.43%, #d715c3 99.35%);
 }
+
+.gradient-name-hover:hover {
+	background: linear-gradient(95.41deg, #ff2e2e 66.45%, #fa0cff 98.62%);
+}
+
+.gradient-sub-hover:hover {
+	background: linear-gradient(92.37deg, #f01f1f 30.51%, #de27a0 104.58%);
+}
+
+.gradient-header-hover:hover {
+	background: linear-gradient(91.87deg, #d715c3 -12.43%, #e30b0b 99.35%);
+}
+
+.gradient-animation {
+	transition: all 0.2s ease-in-out;
+	animation: gradient 10s ease infinite;
+	background-size: 400% 400%;
+}
+
+.gradient-animation-hover:hover {
+	transition: all 0.2s ease-in-out;
+	animation: gradient 10s ease infinite;
+	background-size: 400% 400%;
+}
+
+.clip-text-animation {
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+}
+
+.clip-text {
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.clip-text-hover-animation:hover {
+	transition: all 0.2s ease-in-out;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 10s ease infinite;
+	background-size: 400% 400%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
