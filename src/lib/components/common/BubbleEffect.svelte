@@ -3,7 +3,6 @@
 
     let width: number,
 			height: () => any,
-            canvas_setter: HTMLDivElement,
             largeHeaderHeight,
 			canvas: HTMLCanvasElement,
 			ctx: CanvasRenderingContext2D,
@@ -17,7 +16,7 @@
     });
 
     function initHeader() {
-        width = canvas_setter.offsetWidth;
+        width = window.innerWidth;
         height = () => screen.availHeight / 1.5;
         largeHeaderHeight = screen.availHeight / 1.5;
         target = { x: 0, y: height };
@@ -46,7 +45,7 @@
     }
 
     function resize() {
-        canvas.width = canvas_setter?.offsetWidth;
+        canvas.width = window.innerWidth;
         canvas.height = screen.availHeight / 1.5;
     }
 
@@ -97,6 +96,4 @@
     }
 </script>
 
-<div bind:this={canvas_setter}>
-    <canvas bind:this={canvas} class="absolute bottom-0 left-0"></canvas>
-</div>
+<canvas bind:this={canvas} class="absolute bottom-0 left-0"></canvas>
