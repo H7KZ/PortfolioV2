@@ -8,10 +8,13 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$src: './src',
 			$lib: './src/lib',
 			$components: './src/lib/components',
-			$icons: './src/lib/icons',
-			$css: './src/lib/css'
+			$layouts: './src/lib/layouts',
+			$icons: './src/assets/icons',
+			$css: './src/assets/css',
+			$utils: './src/utils',
 		}
 	},
 	preprocess: [
