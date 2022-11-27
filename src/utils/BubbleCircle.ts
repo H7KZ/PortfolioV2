@@ -1,4 +1,4 @@
-export class CircleClass {
+export class Circle {
     x: number = 0;
     y: number = 0;
     alpha: number = 0.1 + Math.random() * 0.65;

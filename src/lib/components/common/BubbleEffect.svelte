@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import { CircleClass } from '$assets/CircleClass';
+	import { Circle } from '$src/utils/BubbleCircle';
 
 	let width: () => number,
 		height: () => number,
 		canvas: HTMLCanvasElement,
 		ctx: CanvasRenderingContext2D,
-		circles: CircleClass[];
+		circles: Circle[];
 
 	onMount(() => {
 		width = () => window.innerWidth;
@@ -19,7 +19,7 @@
 
 		circles = [];
 		for (var x = 0; x < width() * 0.02; x++) {
-			let c = new CircleClass(width(), height());
+			let c = new Circle(width(), height());
 			circles.push(c);
 		}
 
