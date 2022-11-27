@@ -1,5 +1,5 @@
 <div
-	class="w-screen absolute flex flex-row justify-between items-center text-textWhite font-montserrat pt-4 px-8 xl:pt-6 xl:px-14"
+	class="w-screen absolute flex flex-row justify-between items-center text-textWhite font-montserrat pt-4 px-8 z-2 xl:pt-6 xl:px-14"
 >
 	<h1 class="font-extrabold text-4xl">KOMÍNEKJAN</h1>
 

@@ -6,7 +6,7 @@
 </script>
 
 <template>
-	<div class="w-full h-screen">
+	<div class="w-full h-screen relative">
 		<div
 			class="w-full h-full flex flex-col justify-center items-center text-center text-textWhite font-montserrat font-extrabold z-1 px-3"
 		>

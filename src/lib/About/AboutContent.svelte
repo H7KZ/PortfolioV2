@@ -19,4 +19,5 @@
             {/each}
         </AboutSectionGrid>
     </SectionLayout>
+    <div id="about" />
 </template>
