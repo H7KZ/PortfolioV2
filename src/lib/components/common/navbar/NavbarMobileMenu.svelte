@@ -9,12 +9,6 @@ flex flex-col justify-start pt-32 items-center gap-5 font-montserrat text-xl tex
 {show ? 'show' : 'hide'}
 "
 >
-	<a
-		class="gradient-header-hover clip-text-hover-animation"
-		href="/"
-		on:click={() => (show = false)}>Home</a
-	>
-
 	<div class="w-3/4 h-[2px] bg-line" />
 
 	<a
