@@ -9,6 +9,7 @@
 </script>
 
 <template>
+    <div id="about" />
     <SectionLayout>
         <Header>
             {title}
@@ -19,5 +20,4 @@
             {/each}
         </AboutSectionGrid>
     </SectionLayout>
-    <div id="about" />
 </template>
