@@ -30,8 +30,10 @@
 	});
 
 	function resize() {
-		canvas.width = window.innerWidth;
-		canvas.height = screen.availHeight / 1.5;
+		try {
+			canvas.width = window.innerWidth;
+			canvas.height = screen.availHeight / 1.5;
+		} catch {}
 	}
 
 	function animate() {

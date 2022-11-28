@@ -13,7 +13,7 @@
 			position: string;
 			time: string;
 			start_date: Date;
-			end_date: Date;
+			end_date: Date | null;
 			location: string;
 			skills: string[];
 		}[];
@@ -24,5 +24,7 @@
 	<Header>
 		{title}
 	</Header>
-	<ExperienceTimeline {sections} />
+	<div class="flex flex-col justify-center items-start gap-4 md:items-center">
+		<ExperienceTimeline {sections} />
+	</div>
 </ExperienceLayout>

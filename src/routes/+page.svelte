@@ -17,7 +17,7 @@
 	import Footer from '$components/common/Footer.svelte';
 
 	import BackgroundSvg from '$components/common/BackgroundSVG.svelte';
-	
+
 	let backgroundSVG: HTMLElement;
 
 	onMount(() => {
@@ -53,7 +53,7 @@
 					{
 						title: 'Learn more',
 						description:
-							'You can read more about me on my <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="https://www.linkedin.com/">LinkedIn</a></b> or <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="https://github.com/">GitHub</a></b>.'
+							'You can read more about me on my <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/">LinkedIn</a></b> or <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="https://github.com/H7KZ">GitHub</a></b>.'
 					}
 				]
 			}
@@ -76,8 +76,8 @@
 								color: '#9228E6',
 								position: 'Frontend Developer',
 								time: 'part time',
-								start_date: new Date('2021-10-01'),
-								end_date: new Date(),
+								start_date: new Date('2022-10-01'),
+								end_date: null,
 								location: 'Prague, Czech Republic',
 								skills: ['HTML', 'SCSS', 'UnoCSS', 'JS', 'TS', 'VueJS']
 							},
@@ -87,8 +87,8 @@
 								color: '#D33238',
 								position: 'Application Tester',
 								time: 'intership',
-								start_date: new Date('2021-05-14'),
-								end_date: new Date('2021-05-28'),
+								start_date: new Date('2022-05-14'),
+								end_date: new Date('2022-05-28'),
 								location: 'Prague, Czech Republic',
 								skills: ['Software testing', 'Manual testing', 'Bug reporting', 'Test cases']
 							},
@@ -98,8 +98,8 @@
 								color: '#2CDC7B',
 								position: 'Frontend Developer',
 								time: 'part time',
-								start_date: new Date('2021-01-01'),
-								end_date: new Date('2021-03-31'),
+								start_date: new Date('2022-01-01'),
+								end_date: new Date('2022-03-31'),
 								location: 'Prague, Czech Republic',
 								skills: ['HTML', 'TailwindCSS', 'JS', 'TS', 'SvelteKit']
 							}
@@ -171,7 +171,10 @@
 			<svelte:component this={section.component} {...section.props} />
 		{/each}
 	</div>
-	<div bind:this={backgroundSVG} class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center -z-1">
+	<div
+		bind:this={backgroundSVG}
+		class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center -z-1"
+	>
 		<BackgroundSvg />
 	</div>
 </template>
