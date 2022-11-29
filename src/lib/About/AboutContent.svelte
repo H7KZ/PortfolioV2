@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SectionLayout from '$layouts/SectionLayout.svelte';
+	import AboutLayout from '$layouts/AboutLayout.svelte';
 	import Header from '$components/common/Header.svelte';
 	import AboutSection from './AboutSection.svelte';
 	import AboutSectionGrid from './AboutSectionGrid.svelte';
@@ -9,8 +9,7 @@
 </script>
 
 <template>
-	<div id="about" />
-	<SectionLayout>
+	<AboutLayout>
 		<Header>
 			{title}
 		</Header>
@@ -19,5 +18,5 @@
 				<AboutSection {...section} />
 			{/each}
 		</AboutSectionGrid>
-	</SectionLayout>
+	</AboutLayout>
 </template>

@@ -56,7 +56,7 @@
 </script>
 
 {#each sections as section}
-	<div class="flex flex-col justify-center items-center gap-4">
+	<div class="flex flex-col justify-center items-start gap-4 md:items-center">
 		{#if section.experiences.length !== 0}
 			<div class="flex gap-8">
 				<div class="hidden flex-col justify-around gap-10 my-6 md:flex">

@@ -112,28 +112,24 @@
 			component: ContactContent,
 			props: {
 				title: 'CONTACT ME',
-				sections: [
+				description:
+					'<b>Intrested in hiring me</b> or just want to <b>talk about business solutions</b>. Then you have came to the right individual. I am <b>fully open to a long term projects that include frontend and backend web development</b>.',
+				links: [
 					{
-						description:
-							'*Intrested in hiring me* or just want to *talk about business solutions*. Then you have came to the right individual. I am *fully open to a long term projects that include frontend and backend web development*.',
-						links: [
-							{
-								icon: LinkedIn,
-								href: 'https://www.linkedin.com/'
-							},
-							{
-								icon: Steam,
-								href: 'https://www.linkedin.com/'
-							},
-							{
-								icon: Discord,
-								href: 'https://www.linkedin.com/'
-							},
-							{
-								icon: Email,
-								href: 'https://www.linkedin.com/'
-							}
-						]
+						icon: LinkedIn,
+						href: 'https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/'
+					},
+					{
+						icon: Steam,
+						href: 'https://steamcommunity.com/id/H7KZ/'
+					},
+					{
+						icon: Discord,
+						href: 'https://discord.com/users/466867931821637632'
+					},
+					{
+						icon: Email,
+						href: 'mailto:contact@jankominek.cz'
 					}
 				]
 			}
@@ -149,15 +145,15 @@
 					},
 					{
 						name: 'Source code',
-						href: ''
+						href: 'https://github.com/H7KZ/Portfolio'
 					},
 					{
 						name: 'LinkedIn',
-						href: 'https://www.linkedin.com/'
+						href: 'https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/'
 					},
 					{
 						name: 'GitHub',
-						href: ''
+						href: 'https://github.com/H7KZ/'
 					}
 				]
 			}
