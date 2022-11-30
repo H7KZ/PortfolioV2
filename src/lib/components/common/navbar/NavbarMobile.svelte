@@ -9,15 +9,15 @@
 	}
 </script>
 
-<NavbarMobileMenu bind:show={showMenu} />
+<NavbarMobileMenu bind:show="{showMenu}" />
 <div class="absolute w-screen flex flex-row justify-between text-textWhite pt-3 px-5 z-3">
-	<a class="font-montserrat font-extrabold text-2xl" href="/" on:click={() => (showMenu = false)}>
+	<a class="font-montserrat font-extrabold text-2xl" href="/" on:click="{() => (showMenu = false)}">
 		<h1>KOMÍNEKJAN</h1>
 	</a>
 	<div
 		class="flex justify-center items-center cursor-pointer"
-		on:click={() => toggleMenu('click')}
-		on:keypress={(e) => toggleMenu('key', e)}
+		on:click="{() => toggleMenu('click')}"
+		on:keypress="{(e) => toggleMenu('key', e)}"
 	>
 		<div
 			class="
@@ -28,6 +28,6 @@
 		{showMenu ? 'before:-rotate-45 before:w-8 before:translate-y-0 before:translate-x-[2px]' : ''}
 		{showMenu ? 'after:rotate-45 after:w-8 after:translate-y-0 after:translate-x-[2px]' : ''}
 		"
-		/>
+		></div>
 	</div>
 </div>

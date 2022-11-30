@@ -17,5 +17,5 @@
 	<Header>
 		{title}
 	</Header>
-	<ContactSection {text} {links} />
+	<ContactSection text="{text}" links="{links}" />
 </ContactLayout>

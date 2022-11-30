@@ -20,7 +20,7 @@
 	class="w-[200px] flex flex-col gap-3 font-quicksand text-base font-semibold mx-2 sm:text-lg sm:w-[300px] lg:w-[400px]"
 >
 	<div class="flex gap-2 font-montserrat">
-		<img src={icon} alt={icon} />
+		<img src="{icon}" alt="{icon}" />
 		<div class="flex flex-col">
 			<h3
 				style="color: {color};"
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="flex gap-2">
-		<div style="background-color: {color};" class="min-h-full w-1 rounded" />
+		<div style="background-color: {color};" class="min-h-full w-1 rounded"></div>
 
 		<div class="text-textWhite">
 			<h5>{time}</h5>

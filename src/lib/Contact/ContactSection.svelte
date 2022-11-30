@@ -14,8 +14,8 @@
 	</p>
 	<div class="flex gap-6">
 		{#each links as link}
-			<a href={link.href} target="__blank">
-				<svelte:component this={link.icon} />
+			<a href="{link.href}" target="__blank">
+				<svelte:component this="{link.icon}" />
 			</a>
 		{/each}
 	</div>

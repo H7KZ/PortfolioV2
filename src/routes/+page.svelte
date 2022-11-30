@@ -19,11 +19,11 @@
 <template>
 	<div class="flex flex-col gap-20">
 		{#each sections as section}
-			<svelte:component this={section.component} {...section.props} />
+			<svelte:component this="{section.component}" {...section.props} />
 		{/each}
 	</div>
 	<div
-		bind:this={backgroundSVG}
+		bind:this="{backgroundSVG}"
 		class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center -z-1"
 	>
 		<BackgroundSvg />

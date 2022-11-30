@@ -65,7 +65,7 @@
 					{/each}
 				</div>
 
-				<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0" />
+				<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0"></div>
 
 				<div class="hidden flex-col justify-around gap-10 my-6 md:flex">
 					{#each renderRightSide(section.experiences) as experience}

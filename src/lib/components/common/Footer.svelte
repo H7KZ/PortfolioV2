@@ -14,12 +14,14 @@
 	>
 		{#each links as link, i}
 			<a
-				href={link.href}
-				target={link.href !== '/' ? '__blank' : ''}
-				class="transition-all hover:text-[#b11362]">{link.name}</a
+				href="{link.href}"
+				target="{link.href !== '/' ? '__blank' : ''}"
+				class="transition-all hover:text-[#b11362]"
 			>
+				{link.name}
+			</a>
 			{#if i < links.length - 1}
-				<div class="w-[2px] min-h-full bg-gradient-to-r from-[#ee3232] to-[#db1a7b]" />
+				<div class="w-[2px] min-h-full bg-gradient-to-r from-[#ee3232] to-[#db1a7b]"></div>
 			{/if}
 		{/each}
 	</div>

@@ -25,6 +25,6 @@
 		{title}
 	</Header>
 	<div class="flex flex-col justify-center items-center gap-4">
-		<ExperienceTimeline {sections} />
+		<ExperienceTimeline sections="{sections}" />
 	</div>
 </ExperienceLayout>
