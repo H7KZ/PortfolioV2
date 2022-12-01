@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
+		<meta charset="utf-8" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1CZK5G1SD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			gtag('js', new Date());
+
+			gtag('config', 'G-J1CZK5G1SD');
+
+			function hideConsent() {
+				localStorage.setItem('consent', false);
+				document.getElementById('consent').style.display = 'none';
+				console.log('consent hidden');
+			}
+
+			window.addEventListener('load', function () {
+				if (localStorage.getItem('consent') == 'false') {
+					document.getElementById('consent').style.display = 'none';
+				}
+			});
+		</script>
+
 		<meta name="viewport" content="width=device-width" />
 
 		<!-- IMPORTS -->
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			async
+			defer
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 
 		<!-- SEO -->
-		<meta charset="utf-8" />
 		<title>Komínek Jan's Portfolio</title>
 		<meta name="title" content="Komínek Jan's Portfolio" />
 		<meta
@@ -34,14 +70,26 @@
 		<meta name="language" content="English" />
 		<meta name="author" content="Jan Komínek" />
 
-		<style>
-			html {
-				scroll-behavior: smooth;
-			}
-		</style>
 		%sveltekit.head%
 	</head>
 	<body class="bg-background overflow-x-hidden">
-		<div>%sveltekit.body%</div>
+		<div>
+			<div>%sveltekit.body%</div>
+			<div
+				class="fixed flex flex-col justify-center items-center text-center gap-4 bottom-0 left-0 h-auto py-4 w-screen bg-[#131313] font-quicksand font-semibold text-sm text-textWhite md:text-base md:flex-row"
+				id="consent"
+			>
+				<h2 class="px-3">
+					By using this site you are agreeing to the use of
+					<a
+						class="underline"
+						href="https://marketingplatform.google.com/about/analytics/terms/us/"
+						target="_blank"
+						>google analytics</a
+					>
+				</h2>
+				<button class="px-5 py-1 bg-[#daa617] rounded" onclick="hideConsent()">Close</button>
+			</div>
+		</div>
 	</body>
 </html>

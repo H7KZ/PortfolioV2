@@ -18,7 +18,9 @@
 			</h1>
 			<h2 class="text-xl sm:text-3xl md:text-4xl xl:text-5xl">
 				a passionate
-				<span class="gradient-sub clip-text"><WritingTextEffect text="{text}" /></span><span class="font-normal">|</span>
+				<span class="gradient-sub clip-text"><WritingTextEffect text="{text}" /></span><span
+					class="font-normal">|</span
+				>
 			</h2>
 		</div>
 		<div class="relative -z-1">

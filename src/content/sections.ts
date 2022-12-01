@@ -38,7 +38,7 @@ const sections = [
 				{
 					title: 'Learn more',
 					description:
-						'You can read more about me on my <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/">LinkedIn</a></b> or <b><a style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="https://github.com/H7KZ">GitHub</a></b>.'
+						'You can read more about me on my <b><a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="/social/linkedin">LinkedIn</a></b> or <b><a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="/social/github">GitHub</a></b>.'
 				}
 			]
 		}
@@ -102,15 +102,15 @@ const sections = [
 			links: [
 				{
 					icon: LinkedIn,
-					href: 'https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/'
+					href: '/social/linkedin'
 				},
 				{
 					icon: Steam,
-					href: 'https://steamcommunity.com/id/H7KZ/'
+					href: '/social/steam'
 				},
 				{
 					icon: Discord,
-					href: 'https://discord.com/users/466867931821637632'
+					href: '/social/discord'
 				},
 				{
 					icon: Email,
@@ -134,11 +134,11 @@ const sections = [
 				},
 				{
 					name: 'LinkedIn',
-					href: 'https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/'
+					href: '/social/linkedin'
 				},
 				{
 					name: 'GitHub',
-					href: 'https://github.com/H7KZ/'
+					href: '/social/github'
 				}
 			]
 		}

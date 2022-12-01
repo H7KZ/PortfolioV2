@@ -14,9 +14,9 @@
 	{#each range(2, 1) as version}
 		<div
 			class="lines gradient-sub small-lines {version}"
-			class:pause-animation={pause}
+			class:pause-animation="{pause}"
 			style="--color: {color}; --duration: {duration};"
-		/>
+		></div>
 	{/each}
 </div>
 
@@ -28,7 +28,7 @@
 		position: relative;
 		overflow: hidden;
 		background-clip: padding-box;
-        border-radius: 50px;
+		border-radius: 50px;
 	}
 	.lines {
 		height: calc(var(--size) / 15);
