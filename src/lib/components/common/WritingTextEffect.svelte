@@ -2,8 +2,8 @@
 	export let text: string[] = [];
 	export let eraseInterval: number = 50;
 	export let typeInterval: number = 200;
-	export let waitInterval: number = 1000;
-	export let firstWaitInterval: number = 1000;
+	export let waitInterval: number = 2000;
+	export let firstWaitInterval: number = 2500;
 
 	let actualText: string = text[0];
 	let typeIndex: number = 1;
