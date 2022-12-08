@@ -11,7 +11,9 @@
 		window.addEventListener('scroll', () => {
 			try {
 				backgroundSVG.style.top = `${window.scrollY * 0.5}px`;
-			} catch {}
+			} catch {
+				null;
+			}
 		});
 	});
 </script>

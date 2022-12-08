@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Months from '$utils/Months';
+	import Months from '$src/utils/Months.util';
 
 	export let firm: string;
 	export let icon: string;

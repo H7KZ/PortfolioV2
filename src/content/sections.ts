@@ -4,7 +4,9 @@ import AboutContent from './AboutContent';
 
 import ExperienceContent from './ExperienceContent';
 
-import TestimonialsContent from './TestimonialsContent';
+// import ProjectContent from './ProjectContent';
+
+// import TestimonialsContent from './TestimonialsContent';
 
 import ContactContent from './ContactContent';
 
@@ -17,7 +19,9 @@ const sections = [
 
 	ExperienceContent,
 
-	TestimonialsContent,
+	// ProjectContent,
+
+	// TestimonialsContent,
 
 	ContactContent,
 
