@@ -10,6 +10,7 @@ module.exports = {
 			textWhite: '#F1F1F1',
 			line: '#FFFFFF1A',
 			background: '#1D1D1D',
+			hover: '#C92050',
 			transparent: 'transparent'
 		},
 		zIndex: {

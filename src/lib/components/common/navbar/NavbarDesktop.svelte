@@ -4,10 +4,10 @@
 	<h1 class="font-extrabold text-4xl"><a href="/">KOMÍNEKJAN</a></h1>
 
 	<div class="flex flex-row gap-10 text-xl font-semibold xl:gap-16">
-		<a href="#about" class="gradient-header-hover clip-text-hover-animation">About</a>
+		<a href="#about" class="transition-all  hover:text-hover">About</a>
 
-		<a href="#experience" class="gradient-header-hover clip-text-hover-animation">Experience</a>
+		<a href="#experience" class="transition-all  hover:text-hover">Experience</a>
 
-		<a href="#contact" class="gradient-header-hover clip-text-hover-animation">Contact</a>
+		<a href="#contact" class="transition-all  hover:text-hover">Contact</a>
 	</div>
 </div>

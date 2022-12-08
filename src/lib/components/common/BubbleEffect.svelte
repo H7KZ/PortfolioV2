@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import { Circle } from '$src/utils/BubbleCircle';
+	import { Circle } from '$src/utils/BubbleCircle.util';
 
 	let width: () => number,
 		height: () => number,
@@ -33,7 +33,9 @@
 		try {
 			canvas.width = window.innerWidth;
 			canvas.height = screen.availHeight / 1.5;
-		} catch {}
+		} catch {
+			null;
+		}
 	}
 
 	function animate() {
