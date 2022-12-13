@@ -3,6 +3,9 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
+
 	import '$css/tailwind.css';
 	import '$css/scrollbar.css';
 	import '$css/gradients.css';
@@ -13,6 +16,8 @@
 	import BarLoader from '$src/lib/components/common/BarLoader.svelte';
 
 	onMount(() => {
+		AOS.init();
+
 		setTimeout(() => {
 			loaded.set(true);
 		}, 800);

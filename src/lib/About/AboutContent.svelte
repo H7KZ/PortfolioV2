@@ -11,6 +11,7 @@
 <template>
 	<AboutLayout>
 		<Header>
+			<span class="text-lg sm:text-xl md:text-2xl">01</span>
 			{title}
 		</Header>
 		<AboutSectionGrid>

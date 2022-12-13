@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			quicksand: ['Quicksand', 'sans-serif'],
-			montserrat: ['Montserrat', 'sans-serif']
+			montserrat: ['Montserrat', 'sans-serif'],
+			unbounded: ['Unbounded', 'sans-serif']
 		},
 		colors: {
 			textWhite: '#F1F1F1',

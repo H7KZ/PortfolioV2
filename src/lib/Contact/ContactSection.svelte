@@ -12,7 +12,7 @@
 	<p>
 		{@html text}
 	</p>
-	<div class="flex gap-6">
+	<div class="ml-3 flex gap-6">
 		{#each links as link}
 			<a href="{link.href}" target="__blank">
 				<svelte:component this="{link.icon}" />
