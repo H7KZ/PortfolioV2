@@ -1,5 +1,7 @@
 # <a href="https://kominekjan.cz/" target="__blank">My Porfolio</a>
 
+[![wakatime](https://wakatime.com/badge/github/H7KZ/Portfolio.svg)](https://wakatime.com/badge/github/H7KZ/Portfolio)
+
 ### Written in SvelteKit using TypeScript and CSS Framework TailwindCSS.
 
 ## You are allowed to get inspired and copy some things I have no problem with that
