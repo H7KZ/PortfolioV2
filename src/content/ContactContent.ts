@@ -4,6 +4,8 @@ import LinkedIn from '$icons/LinkedIn.svelte';
 import Steam from '$icons/Steam.svelte';
 import Discord from '$icons/Discord.svelte';
 import Email from '$icons/Email.svelte';
+import Instagram from '$icons/Instagram.svelte';
+import Twitter from '$icons/Twitter.svelte';
 
 export default {
 	component: ContactContent,
@@ -17,16 +19,24 @@ export default {
 				href: '/social/linkedin'
 			},
 			{
-				icon: Steam,
-				href: '/social/steam'
-			},
-			{
 				icon: Discord,
 				href: '/social/discord'
 			},
 			{
 				icon: Email,
 				href: 'mailto:contact@jankominek.cz'
+			},
+			{
+				icon: Instagram,
+				href: '/social/instagram'
+			},
+			{
+				icon: Steam,
+				href: '/social/steam'
+			},
+			{
+				icon: Twitter,
+				href: '/social/twitter'
 			}
 		]
 	}
