@@ -59,7 +59,7 @@
 	<div class="flex flex-col justify-center items-start gap-4 md:items-center">
 		{#if section.experiences.length !== 0}
 			<div class="flex gap-8">
-				<div class="hidden flex-col justify-around gap-10 my-6 md:flex">
+				<div class="hidden flex-col justify-around gap-16 my-6 md:flex">
 					{#each renderLeftSide(section.experiences) as experience}
 						<ExperienceSection {...experience} />
 					{/each}
@@ -67,13 +67,13 @@
 
 				<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0"></div>
 
-				<div class="hidden flex-col justify-around gap-10 my-6 md:flex">
+				<div class="hidden flex-col justify-around gap-16 my-6 md:flex">
 					{#each renderRightSide(section.experiences) as experience}
 						<ExperienceSection {...experience} />
 					{/each}
 				</div>
 
-				<div class="flex flex-col gap-10 my-6 md:hidden">
+				<div class="flex flex-col gap-16 my-6 md:hidden">
 					{#each section.experiences as experience}
 						<ExperienceSection {...experience} />
 					{/each}

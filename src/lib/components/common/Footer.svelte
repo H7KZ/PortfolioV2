@@ -16,7 +16,7 @@
 			<a
 				href="{link.href}"
 				target="{link.href !== '/' ? '__blank' : ''}"
-				class="transition-all hover:text-[#b11362]"
+				class="transition-all hover:text-hover"
 			>
 				{link.name}
 			</a>
