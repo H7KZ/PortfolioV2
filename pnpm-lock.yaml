@@ -22,7 +22,7 @@ specifiers:
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
   typescript: ^4.9.4
-  vite: ^3.2.5
+  vite: ^4.0.0
 
 dependencies:
   aos: 3.0.0-beta.6
