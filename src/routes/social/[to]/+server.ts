@@ -6,7 +6,8 @@ const socials: Map<string, string> = new Map([
 	['steam', 'https://steamcommunity.com/id/H7KZ'],
 	['discord', 'https://discord.com/users/466867931821637632'],
 	['instagram', 'https://www.instagram.com/jan_kominek'],
-	['twitter', 'https://twitter.com/_jankominek']
+	['twitter', 'https://twitter.com/_jankominek'],
+	['fiverr', 'https://www.fiverr.com/jan_kominek?up_rollout=true']
 ]);
 
 export const GET: RequestHandler = async ({ params }: RequestEvent) => {
