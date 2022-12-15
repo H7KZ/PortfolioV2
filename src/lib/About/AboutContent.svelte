@@ -3,9 +3,10 @@
 	import Header from '$components/common/Header.svelte';
 	import AboutSection from './AboutSection.svelte';
 	import AboutSectionGrid from './AboutSectionGrid.svelte';
+	import type { AboutSectionArray } from '$src/types/about.types';
 
 	export let title: string;
-	export let sections: { title: string; description: string }[];
+	export let sections: AboutSectionArray;
 </script>
 
 <template>
@@ -16,7 +17,7 @@
 		</Header>
 		<AboutSectionGrid>
 			{#each sections as section}
-				<AboutSection {...section} />
+				<AboutSection section="{section}" />
 			{/each}
 		</AboutSectionGrid>
 	</AboutLayout>

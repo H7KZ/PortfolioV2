@@ -1,9 +1,8 @@
 <script lang="ts">
+	import type { ContactLinkArray } from '$src/types/contact.types';
+
 	export let text: string;
-	export let links: {
-		icon: ConstructorOfATypedSvelteComponent;
-		href: string;
-	}[];
+	export let links: ContactLinkArray;
 </script>
 
 <div
