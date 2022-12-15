@@ -13,6 +13,17 @@ export default {
 				year: '2022',
 				experiences: [
 					{
+						firm: 'Precismo',
+						icon: '/logos/Precismo.svg',
+						color: '#1d66f3',
+						position: 'Frontend Developer',
+						time: 'part time',
+						start_date: new Date('2022-12-19'),
+						end_date: null,
+						location: 'Prague, Czech Republic',
+						skills: ['HTML', 'SCSS', 'JS', 'SvelteKit', 'ReactJS', 'Python']
+					},
+					{
 						firm: 'HAXAGON',
 						icon: '/logos/Haxagon.svg',
 						color: '#9228E6',

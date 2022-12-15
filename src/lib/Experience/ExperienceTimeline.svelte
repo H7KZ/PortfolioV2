@@ -1,35 +1,15 @@
 <script lang="ts">
+	import type { ExperienceArray } from '$src/types/experience.types';
+
 	import ExperienceSection from './ExperienceSection.svelte';
 
 	export let sections: {
 		year: string;
-		experiences: {
-			firm: string;
-			icon: string;
-			color: string;
-			position: string;
-			time: string;
-			start_date: Date;
-			end_date: Date | null;
-			location: string;
-			skills: string[];
-		}[];
+		experiences: ExperienceArray;
 	}[];
 
-	type Experience = {
-		firm: string;
-		icon: string;
-		color: string;
-		position: string;
-		time: string;
-		start_date: Date;
-		end_date: Date | null;
-		location: string;
-		skills: string[];
-	}[];
-
-	function renderRightSide(experiences: Experience): Experience {
-		let right: Experience = [];
+	function renderRightSide(experiences: ExperienceArray): ExperienceArray {
+		let right: ExperienceArray = [];
 		let i: number = 1;
 		experiences.forEach((ex) => {
 			if (i % 2 === 0) {
@@ -41,8 +21,8 @@
 		return right;
 	}
 
-	function renderLeftSide(experiences: Experience): Experience {
-		let left: Experience = [];
+	function renderLeftSide(experiences: ExperienceArray): ExperienceArray {
+		let left: ExperienceArray = [];
 		let i: number = 1;
 		experiences.forEach((ex) => {
 			if (i % 2 !== 0) {
@@ -59,23 +39,24 @@
 	<div class="flex flex-col justify-center items-start gap-4 md:items-center">
 		{#if section.experiences.length !== 0}
 			<div class="flex gap-8">
-				<div class="hidden flex-col justify-around gap-16 my-6 md:flex">
+				<div class="hidden flex-col gap-24 my-6 md:flex">
 					{#each renderLeftSide(section.experiences) as experience}
-						<ExperienceSection {...experience} />
+						<ExperienceSection experience="{experience}" />
 					{/each}
 				</div>
 
 				<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0"></div>
 
-				<div class="hidden flex-col justify-around gap-16 my-6 md:flex">
+				<div class="hidden flex-col gap-24 my-6 md:flex">
+					<div class="h-9"></div>
 					{#each renderRightSide(section.experiences) as experience}
-						<ExperienceSection {...experience} />
+						<ExperienceSection experience="{experience}" />
 					{/each}
 				</div>
 
 				<div class="flex flex-col gap-16 my-6 md:hidden">
 					{#each section.experiences as experience}
-						<ExperienceSection {...experience} />
+						<ExperienceSection experience="{experience}" />
 					{/each}
 				</div>
 			</div>

@@ -1,8 +1,9 @@
 <script lang="ts">
-	export let title: string;
-	export let description: string;
+	import type { AboutSection } from '$src/types/about.types';
 
-	const text = description.replaceAll('<b>', "<b class='text-transparent'>");
+	export let section: AboutSection;
+
+	const text = section.description.replaceAll('<b>', "<b class='text-transparent'>");
 </script>
 
 <template>
@@ -12,7 +13,7 @@
 		<h2
 			class="text-2xl font-montserrat font-bold gradient-header clip-text md:text-3xl lg:text-[2.5rem] lg:leading-[2.75rem]"
 		>
-			{title}
+			{section.title}
 		</h2>
 		<p class="text-sm font-quicksand font-normal sm:text-base md:text-lg">
 			{@html text}

@@ -1,11 +1,9 @@
 <script lang="ts">
 	import FooterLayout from '$src/lib/layouts/FooterLayout.svelte';
+	import type { FooterLinkArray } from '$src/types/footer.types';
 
 	export let copyright: string;
-	export let links: {
-		name: string;
-		href: string;
-	}[];
+	export let links: FooterLinkArray;
 </script>
 
 <FooterLayout>

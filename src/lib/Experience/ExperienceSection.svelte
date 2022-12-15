@@ -1,18 +1,17 @@
 <script lang="ts">
+	import type { Experience } from '$src/types/experience.types';
+
 	import Months from '$src/utils/Months.util';
 
-	export let firm: string;
-	export let icon: string;
-	export let color: string;
-	export let position: string;
-	export let time: string;
-	export let start_date: Date;
-	export let end_date: Date | null;
-	export let location: string;
-	export let skills: string[];
+	export let experience: Experience;
 
 	const monthDiff = () => {
-		return Math.abs(start_date.getMonth() - (end_date?.getMonth() ?? new Date().getMonth())) + 1;
+		return (
+			Math.abs(
+				(experience.start_date?.getMonth() ?? new Date().getMonth()) -
+					(experience.end_date?.getMonth() ?? new Date().getMonth())
+			) + 1
+		);
 	};
 </script>
 
@@ -21,43 +20,49 @@
 	data-aos="slide-up"
 >
 	<div class="flex gap-2 font-montserrat">
-		<img src="{icon}" alt="{icon}" />
+		<img src="{experience.icon}" alt="{experience.icon}" />
 		<div class="flex flex-col">
 			<h3
-				style="color: {color};"
+				style="color: {experience.color};"
 				class="font-extrabold text-2xl leading-6 md:text-4xl md:leading-9"
 			>
-				{firm}
+				{experience.firm}
 			</h3>
 			<h4 class="text-textWhite font-semibold text-base leading-4 md:text-xl md:leading-5">
-				{position}
+				{experience.position}
 			</h4>
 		</div>
 	</div>
 	<div class="flex gap-2">
-		<div style="background-color: {color};" class="min-h-full w-1 rounded"></div>
+		<div style="background-color: {experience.color};" class="min-h-full w-1 rounded"></div>
 
 		<div class="text-textWhite">
-			<h5>{time}</h5>
-			<h5>
-				{Months[start_date.getMonth()] + ' ' + start_date.getFullYear().toString()} - {end_date
-					? Months[end_date?.getMonth() ?? 0] + ' ' + end_date?.getFullYear()
-					: 'now'}
-				•
-				{monthDiff()}
-				{monthDiff() === 1 ? 'month' : 'months'}
-			</h5>
-			<h5>{location}</h5>
+			<h5>{experience.time}</h5>
+			{#if experience.start_date}
+				<h5>
+					{Months[experience.start_date.getMonth()] +
+						' ' +
+						experience.start_date.getFullYear().toString()} - {experience.end_date
+						? Months[experience.end_date?.getMonth() ?? 0] +
+						  ' ' +
+						  experience.end_date?.getFullYear()
+						: 'now'}
+					•
+					{monthDiff()}
+					{monthDiff() === 1 ? 'month' : 'months'}
+				</h5>
+			{/if}
+			<h5>{experience.location}</h5>
 		</div>
 	</div>
 	<div>
 		<p>
-			{#each skills as skill, i}
-				<span style="color: {color};">
+			{#each experience.skills as skill, i}
+				<span style="color: {experience.color};">
 					<span>
 						{skill}
 					</span>
-					{#if i != skills.length - 1}
+					{#if i != experience.skills.length - 1}
 						<span class="text-textWhite"> • </span>
 					{/if}
 				</span>
