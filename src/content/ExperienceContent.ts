@@ -14,6 +14,7 @@ export default {
 				experiences: [
 					{
 						firm: 'Precismo',
+						firmLink: 'https://precismo.com/',
 						icon: '/logos/Precismo.svg',
 						color: '#1d66f3',
 						position: 'Frontend Developer',
@@ -25,6 +26,7 @@ export default {
 					},
 					{
 						firm: 'HAXAGON',
+						firmLink: 'https://haxagon.cz/',
 						icon: '/logos/Haxagon.svg',
 						color: '#9228E6',
 						position: 'Frontend Developer',
@@ -36,6 +38,7 @@ export default {
 					},
 					{
 						firm: 'TV NOVA',
+						firmLink: 'https://tv.nova.cz/',
 						icon: '/logos/TVNova.svg',
 						color: '#D33238',
 						position: 'Application Tester',
@@ -47,6 +50,7 @@ export default {
 					},
 					{
 						firm: 'Froneb',
+						firmLink: 'https://froneb.com/',
 						icon: '/logos/Froneb.svg',
 						color: '#2CDC7B',
 						position: 'Frontend Developer',
