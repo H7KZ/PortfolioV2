@@ -20,14 +20,18 @@
 	data-aos="slide-up"
 >
 	<div class="flex gap-2 font-montserrat">
-		<img src="{experience.icon}" alt="{experience.icon}" />
+		<a href="{experience.firmLink}" target="__blank">
+			<img src="{experience.icon}" alt="{experience.icon}" />
+		</a>
 		<div class="flex flex-col">
-			<h3
-				style="color: {experience.color};"
-				class="font-extrabold text-2xl leading-6 md:text-4xl md:leading-9"
-			>
-				{experience.firm}
-			</h3>
+			<a href="{experience.firmLink}" target="__blank">
+				<h3
+					style="color: {experience.color};"
+					class="font-extrabold text-2xl leading-6 md:text-4xl md:leading-9"
+				>
+					{experience.firm}
+				</h3>
+			</a>
 			<h4 class="text-textWhite font-semibold text-base leading-4 md:text-xl md:leading-5">
 				{experience.position}
 			</h4>
