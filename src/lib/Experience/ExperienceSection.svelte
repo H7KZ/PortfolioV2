@@ -18,6 +18,7 @@
 <div
 	class="w-[200px] flex flex-col gap-3 font-quicksand text-base font-semibold mx-2 sm:text-lg sm:w-[300px] lg:w-[400px]"
 	data-aos="slide-up"
+	data-aos-once="true"
 >
 	<div class="flex gap-2 font-montserrat">
 		<a href="{experience.firmLink}" target="__blank">
