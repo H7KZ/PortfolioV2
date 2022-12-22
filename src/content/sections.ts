@@ -1,16 +1,18 @@
-import LandingContent from './LandingContent';
+import LandingContent from './landing.content';
 
-import AboutContent from './AboutContent';
+import AboutContent from './about.content';
 
-import ExperienceContent from './ExperienceContent';
+import ExperienceContent from './experience.content';
 
 // import ProjectContent from './ProjectContent';
 
 // import TestimonialsContent from './TestimonialsContent';
 
-import ContactContent from './ContactContent';
+import ContactContent from './contact.content';
 
-import Footer from './FooterContent';
+import BlogContent from './blog.content';
+
+import Footer from './footer.content';
 
 const sections = [
 	LandingContent,
@@ -24,6 +26,8 @@ const sections = [
 	// TestimonialsContent,
 
 	ContactContent,
+
+	BlogContent,
 
 	Footer
 ];

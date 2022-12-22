@@ -6,3 +6,5 @@
 		image: string;
 	}[];
 </script>
+
+<template> </template>

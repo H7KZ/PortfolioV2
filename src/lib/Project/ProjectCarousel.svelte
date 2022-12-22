@@ -1,10 +1,7 @@
 <script lang="ts">
-	export let projects: {
-		title: string;
-		description: string;
-		image: string;
-		link: string;
-		code: string;
-		tags: string[];
-	}[];
+	import type { projectArray } from '$src/types/project.types';
+
+	export let projects: projectArray;
 </script>
+
+<template> </template>

@@ -35,35 +35,37 @@
 	}
 </script>
 
-{#each sections as section}
-	<div class="flex flex-col justify-center items-start gap-4 md:items-center">
-		{#if section.experiences.length !== 0}
-			<div class="flex gap-8">
-				<div class="hidden flex-col gap-24 my-6 md:flex">
-					{#each renderLeftSide(section.experiences) as experience}
-						<ExperienceSection experience="{experience}" />
-					{/each}
+<template>
+	{#each sections as section}
+		<div class="flex flex-col justify-center items-start gap-4 md:items-center">
+			{#if section.experiences.length !== 0}
+				<div class="flex gap-8">
+					<div class="hidden flex-col gap-24 my-6 md:flex">
+						{#each renderLeftSide(section.experiences) as experience}
+							<ExperienceSection experience="{experience}" />
+						{/each}
+					</div>
+
+					<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0"></div>
+
+					<div class="hidden flex-col gap-24 my-6 md:flex">
+						<div class="h-9"></div>
+						{#each renderRightSide(section.experiences) as experience}
+							<ExperienceSection experience="{experience}" />
+						{/each}
+					</div>
+
+					<div class="flex flex-col gap-16 my-6 md:hidden">
+						{#each section.experiences as experience}
+							<ExperienceSection experience="{experience}" />
+						{/each}
+					</div>
 				</div>
+			{/if}
 
-				<div class="min-h-full w-1 rounded bg-[#ffffff9f] ml-6 md:m-0"></div>
-
-				<div class="hidden flex-col gap-24 my-6 md:flex">
-					<div class="h-9"></div>
-					{#each renderRightSide(section.experiences) as experience}
-						<ExperienceSection experience="{experience}" />
-					{/each}
-				</div>
-
-				<div class="flex flex-col gap-16 my-6 md:hidden">
-					{#each section.experiences as experience}
-						<ExperienceSection experience="{experience}" />
-					{/each}
-				</div>
-			</div>
-		{/if}
-
-		<h1 class="font-montserrat font-bold text-3xl text-textWhite ml-6 md:m-0">
-			{section.year}
-		</h1>
-	</div>
-{/each}
+			<h1 class="font-montserrat font-bold text-3xl text-textWhite ml-6 md:m-0">
+				{section.year}
+			</h1>
+		</div>
+	{/each}
+</template>

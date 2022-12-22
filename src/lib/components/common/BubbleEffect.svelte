@@ -48,4 +48,6 @@
 	}
 </script>
 
-<canvas bind:this="{canvas}" class="absolute bottom-0 left-0"></canvas>
+<template>
+	<canvas bind:this="{canvas}" class="absolute bottom-0 left-0"></canvas>
+</template>

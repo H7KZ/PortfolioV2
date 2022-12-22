@@ -15,7 +15,8 @@ const config = {
 			$icons: './src/assets/icons',
 			$css: './src/assets/css',
 			$utils: './src/utils',
-			$assets: './src/assets'
+			$assets: './src/assets',
+			$content: './src/content'
 		}
 	},
 	preprocess: [

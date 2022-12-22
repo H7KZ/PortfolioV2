@@ -11,10 +11,12 @@
 	const text = description.replaceAll('<b>', "<b class='text-transparent'>");
 </script>
 
-<ContactLayout>
-	<Header>
-		<span class="text-lg sm:text-xl md:text-2xl">03</span>
-		{title}
-	</Header>
-	<ContactSection text="{text}" links="{links}" />
-</ContactLayout>
+<template>
+	<ContactLayout>
+		<Header>
+			<span class="text-lg sm:text-xl md:text-2xl">04</span>
+			{title}
+		</Header>
+		<ContactSection text="{text}" links="{links}" />
+	</ContactLayout>
+</template>
