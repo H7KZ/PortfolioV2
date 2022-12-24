@@ -11,7 +11,7 @@ const socials: Map<string, string> = new Map([
 ]);
 
 export const GET: RequestHandler = async ({ params }: RequestEvent) => {
-	if (!socials.has(params.to ?? '')) throw redirect(303, '/');
+	if (!socials.has(params.type ?? '')) throw redirect(303, '/');
 
-	throw redirect(302, socials.get(params.to ?? '') ?? '/');
+	throw redirect(302, socials.get(params.type ?? '') ?? '/');
 };

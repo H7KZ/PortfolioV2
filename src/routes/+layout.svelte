@@ -18,16 +18,14 @@
 	onMount(() => {
 		AOS.init();
 
-		setTimeout(() => {
-			loaded.set(true);
-		}, 800);
+		loaded.set(true);
 	});
 </script>
 
 <template class="relative overflow-hidden">
 	{#if !$loaded}
 		<div
-			transition:slide="{{ duration: 1000, easing: quintOut }}"
+			transition:slide="{{ duration: 800, easing: quintOut }}"
 			class="fixed top-0 left-0 bg-background w-screen h-screen flex flex-col justify-center items-center z-4"
 		>
 			<div class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center"></div>

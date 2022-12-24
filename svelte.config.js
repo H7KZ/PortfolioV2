@@ -8,6 +8,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$kominekjan: './src/@kominekjan',
 			$src: './src',
 			$lib: './src/lib',
 			$components: './src/lib/components',
