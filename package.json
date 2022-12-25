@@ -16,6 +16,7 @@
 		"@sveltejs/kit": "1.0.0-next.589",
 		"@types/aos": "^3.0.4",
 		"@types/eventsource": "^1.1.10",
+		"@types/marked": "^4.0.8",
 		"@typescript-eslint/eslint-plugin": "^5.47.0",
 		"@typescript-eslint/parser": "^5.47.0",
 		"autoprefixer": "^10.4.13",
@@ -37,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"aos": "3.0.0-beta.6",
+		"marked": "^4.2.5",
 		"node-sass": "^8.0.0",
 		"pocketbase": "^0.9.0"
 	}
