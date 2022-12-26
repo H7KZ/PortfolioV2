@@ -12,7 +12,9 @@
 <template>
 	<NavbarMobileMenu bind:show="{showMenu}" />
 	<div
-		class="absolute w-screen flex flex-row justify-between text-textWhite pt-3 px-5 z-3 sm:pt-5 sm:px-7"
+		class="{showMenu
+			? 'fixed'
+			: 'absolute'} w-screen flex flex-row justify-between text-textWhite pt-3 px-5 z-3 sm:pt-5 sm:px-7"
 	>
 		<a
 			class="font-unbounded font-extrabold text-2xl sm:text-3xl"

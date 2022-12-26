@@ -32,12 +32,26 @@ export class Post {
 	created: Date;
 	updated: Date;
 	likes: number;
+	tagsCache: Tag[] | undefined;
+	categoriesCache: Category[] | undefined;
 
 	async tags(): Promise<Tag[]> {
-		return await getPostTags(this.id);
+		if (this.tagsCache) {
+			return this.tagsCache;
+		}
+
+		this.tagsCache = await getPostTags(this.id);
+
+		return this.tagsCache;
 	}
 
 	async categories(): Promise<Category[]> {
-		return await getPostCategories(this.id);
+		if (this.categoriesCache) {
+			return this.categoriesCache;
+		}
+
+		this.categoriesCache = await getPostCategories(this.id);
+
+		return this.categoriesCache;
 	}
 }

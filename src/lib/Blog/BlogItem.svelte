@@ -26,7 +26,7 @@
 	>
 		<div class="flex gap-4">
 			{#if isImage(post.thumbnail)}
-				<img src="{post.thumbnail}" alt="thumbnail" class="w-48 h-32 object-cover rounded-3xl" />
+				<img src="{post.thumbnail}" alt="thumbnail" class="w-32 h-32 object-cover rounded-3xl" />
 			{/if}
 			<div class="flex flex-col justify-between gap-4">
 				<div>

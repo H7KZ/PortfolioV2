@@ -19,16 +19,16 @@ export default {
 	],
 	blog: [
 		{
-			title: 'Home',
-			href: '/'
-		},
-		{
 			title: 'Blog',
 			href: '/blog'
 		},
 		{
 			title: 'Latest',
 			href: '/blog/latest'
+		},
+		{
+			title: 'Home',
+			href: '/'
 		}
 	]
 };

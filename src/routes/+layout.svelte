@@ -6,9 +6,7 @@
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 
-	import '$css/tailwind.css';
-	import '$css/scrollbar.css';
-	import '$css/gradients.css';
+	import '$css/global.css';
 
 	import Navbar from '$components/common/navbar/Navbar.svelte';
 
