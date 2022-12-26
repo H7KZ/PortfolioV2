@@ -4,21 +4,18 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: ['main', 'dev']
   pull_request:
     branches: ['main', 'dev']
 
 jobs:
   build:
-  
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    
+
     name: Format, Lint and Build Tests
 
     steps:

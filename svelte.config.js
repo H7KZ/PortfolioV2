@@ -8,6 +8,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$kominekjan: './src/@kominekjan',
 			$src: './src',
 			$lib: './src/lib',
 			$components: './src/lib/components',
@@ -15,7 +16,8 @@ const config = {
 			$icons: './src/assets/icons',
 			$css: './src/assets/css',
 			$utils: './src/utils',
-			$assets: './src/assets'
+			$assets: './src/assets',
+			$content: './src/content'
 		}
 	},
 	preprocess: [

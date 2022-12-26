@@ -14,12 +14,14 @@
 	}
 </script>
 
-<button
-	type="button"
-	class="button"
-	style="color: {color}; background-color: {backgroundColor}"
-	on:click="{clickHandler}"
-	disabled="{disabled}"
->
-	<slot />
-</button>
+<template>
+	<button
+		type="button"
+		class="button"
+		style="color: {color}; background-color: {backgroundColor}"
+		on:click="{clickHandler}"
+		disabled="{disabled}"
+	>
+		<slot />
+	</button>
+</template>

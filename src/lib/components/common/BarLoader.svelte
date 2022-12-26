@@ -3,22 +3,24 @@
 	import { calculateRgba, range } from '$utils/BarLoader.util';
 	export let color: SpinnerTypes['color'] = '#FF3E00';
 	export let unit: SpinnerTypes['unit'] = 'px';
-	export let duration: SpinnerTypes['duration'] = '2.1s';
+	export let duration: SpinnerTypes['duration'] = '1.2s';
 	export let size: SpinnerTypes['size'] = '60';
 	export let pause: SpinnerTypes['pause'] = false;
 	let rgba: string;
 	$: rgba = calculateRgba(color, 0.2);
 </script>
 
-<div class="wrapper" style="--size: {size}{unit}; --rgba:{rgba}">
-	{#each range(2, 1) as version}
-		<div
-			class="lines gradient-sub small-lines {version}"
-			class:pause-animation="{pause}"
-			style="--color: {color}; --duration: {duration};"
-		></div>
-	{/each}
-</div>
+<template>
+	<div class="wrapper" style="--size: {size}{unit}; --rgba:{rgba}">
+		{#each range(2, 1) as version}
+			<div
+				class="lines gradient-sub small-lines {version}"
+				class:pause-animation="{pause}"
+				style="--color: {color}; --duration: {duration};"
+			></div>
+		{/each}
+	</div>
+</template>
 
 <style>
 	.wrapper {

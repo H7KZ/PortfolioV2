@@ -16,10 +16,12 @@
 	});
 </script>
 
-<nav>
-	{#if showMobileNavbar && loaded}
-		<NavbarMobile />
-	{:else if loaded}
-		<NavbarDesktop />
-	{/if}
-</nav>
+<template>
+	<nav>
+		{#if showMobileNavbar && loaded}
+			<NavbarMobile />
+		{:else if loaded}
+			<NavbarDesktop />
+		{/if}
+	</nav>
+</template>

@@ -46,4 +46,6 @@
 	}
 </script>
 
-{actualText}
+<template>
+	{actualText}
+</template>

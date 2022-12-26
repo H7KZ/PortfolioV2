@@ -12,9 +12,11 @@
 	}[];
 </script>
 
-<TestimonialsLayout>
-	<Header>
-		{title}
-	</Header>
-	<TestimonialSection reviews="{reviews}" />
-</TestimonialsLayout>
+<template>
+	<TestimonialsLayout>
+		<Header>
+			{title}
+		</Header>
+		<TestimonialSection reviews="{reviews}" />
+	</TestimonialsLayout>
+</template>

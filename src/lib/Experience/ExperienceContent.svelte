@@ -20,12 +20,14 @@
 	}[];
 </script>
 
-<ExperienceLayout>
-	<Header>
-		<span class="text-lg sm:text-xl md:text-2xl">02</span>
-		{title}
-	</Header>
-	<div class="flex flex-col justify-center items-center gap-4">
-		<ExperienceTimeline sections="{sections}" />
-	</div>
-</ExperienceLayout>
+<template>
+	<ExperienceLayout>
+		<Header>
+			<span class="text-lg sm:text-xl md:text-2xl">02</span>
+			{title}
+		</Header>
+		<div class="flex flex-col justify-center items-center gap-4">
+			<ExperienceTimeline sections="{sections}" />
+		</div>
+	</ExperienceLayout>
+</template>
