@@ -17,8 +17,8 @@
 		"@types/aos": "^3.0.4",
 		"@types/eventsource": "^1.1.10",
 		"@types/marked": "^4.0.8",
-		"@typescript-eslint/eslint-plugin": "^5.47.0",
-		"@typescript-eslint/parser": "^5.47.0",
+		"@typescript-eslint/eslint-plugin": "^5.47.1",
+		"@typescript-eslint/parser": "^5.47.1",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.30.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -40,6 +40,6 @@
 		"aos": "3.0.0-beta.6",
 		"marked": "^4.2.5",
 		"node-sass": "^8.0.0",
-		"pocketbase": "^0.9.0"
+		"pocketbase": "^0.9.1"
 	}
 }
