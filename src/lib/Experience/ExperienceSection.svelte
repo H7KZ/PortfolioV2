@@ -15,13 +15,16 @@
 	};
 </script>
 
-<template>
-	<div
-		class="w-[200px] flex flex-col gap-3 font-quicksand text-base font-semibold mx-2 sm:text-lg sm:w-[300px] lg:w-[400px]"
-		data-aos="slide-up"
-		data-aos-once="true"
-	>
-		<div class="flex gap-2 font-montserrat">
+<div
+	class="w-[200px] flex flex-col gap-3 font-quicksand text-base font-semibold mx-2 sm:text-lg sm:w-[300px] lg:w-[400px]"
+	data-aos="slide-up"
+	data-aos-once="true"
+>
+	<div class="flex gap-2 font-montserrat">
+		<a href="{experience.firmLink}" target="__blank">
+			<img src="{experience.icon}" alt="{experience.icon}" />
+		</a>
+		<div class="flex flex-col">
 			<a href="{experience.firmLink}" target="__blank">
 				<img src="{experience.icon}" alt="{experience.icon}" />
 			</a>
