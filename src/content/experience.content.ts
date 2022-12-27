@@ -1,4 +1,4 @@
-import ExperienceContent from '$lib/Experience/ExperienceContent.svelte';
+import ExperienceContent from '$src/lib/Experience/Experience.svelte';
 
 export default {
 	component: ExperienceContent,

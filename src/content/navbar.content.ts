@@ -1,9 +1,9 @@
 export default {
 	default: [
-		{
-			title: 'Blog',
-			href: '/blog'
-		},
+		// {
+		// 	title: 'Blog',
+		// 	href: '/blog'
+		// },
 		{
 			title: 'About',
 			href: '#about'

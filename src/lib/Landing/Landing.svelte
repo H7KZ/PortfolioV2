@@ -2,7 +2,7 @@
 	import BubbleEffect from '$lib/components/common/BubbleEffect.svelte';
 	import WritingTextEffect from '$lib/components/common/WritingTextEffect.svelte';
 
-	export let text: string[] = ['Frontend Developer', 'Minecraft Developer', 'UI/UX Designer'];
+	export let text: string[] = ['Frontend Developer', 'Backend Developer', 'UI/UX Designer'];
 </script>
 
 <template>

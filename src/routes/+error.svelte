@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	import ErrorContent from '$lib/Error/ErrorContent.svelte';
+	import ErrorContent from '$src/lib/Error/Error.svelte';
 
 	import BackgroundSvg from '$src/lib/components/common/BackgroundSVG.svelte';
 </script>
