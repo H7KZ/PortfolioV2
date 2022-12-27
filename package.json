@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^1.0.0",
 		"aos": "3.0.0-beta.6",
 		"marked": "^4.2.5",
 		"node-sass": "^8.0.0",
