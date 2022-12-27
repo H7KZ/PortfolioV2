@@ -1,4 +1,4 @@
-import ProjectContent from '$src/lib/Project/ProjectContent.svelte';
+import ProjectContent from '$src/lib/Project/Project.svelte';
 
 export default {
 	component: ProjectContent,

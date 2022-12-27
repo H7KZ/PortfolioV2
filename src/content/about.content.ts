@@ -1,4 +1,4 @@
-import AboutContent from '$lib/About/AboutContent.svelte';
+import AboutContent from '$src/lib/About/About.svelte';
 
 export default {
 	component: AboutContent,

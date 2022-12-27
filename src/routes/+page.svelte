@@ -20,8 +20,8 @@
 
 <template>
 	<div class="flex flex-col gap-20">
-		{#each sections as section}
-			<svelte:component this="{section.component}" {...section.props} />
+		{#each sections as section, i}
+			<svelte:component this="{section.component}" number="{'0' + i}" {...section.props} />
 		{/each}
 	</div>
 	<div

@@ -1,8 +1,8 @@
-import LandingContent from '$lib/Landing/LandingContent.svelte';
+import LandingContent from '$src/lib/Landing/Landing.svelte';
 
 export default {
 	component: LandingContent,
 	props: {
-		text: ['Frontend Developer', 'Minecraft Developer', 'UI/UX Designer']
+		text: ['Frontend Developer', 'Backend Developer', 'UI/UX Designer']
 	}
 };

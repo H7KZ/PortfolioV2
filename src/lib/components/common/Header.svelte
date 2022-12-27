@@ -1,6 +1,12 @@
+<script lang="ts">
+	export let smaller: boolean = false;
+</script>
+
 <template>
 	<h1
-		class="relative px-2 flex items-start gap-2 text-4xl font-unbounded font-bold gradient-header clip-text text-center sm:text-5xl md:text-6xl"
+		class="{smaller
+			? 'text-2xl sm:text-3xl md:text-4xl'
+			: 'text-4xl sm:text-5xl sm:leading-[60px] md:text-6xl md:leading-[72px]'} relative px-2 flex items-start gap-2 font-unbounded font-bold gradient-header clip-text text-center"
 	>
 		<slot />
 		<div class="absolute -bottom-2 w-2/5 h-1 bg-line rounded-full"></div>

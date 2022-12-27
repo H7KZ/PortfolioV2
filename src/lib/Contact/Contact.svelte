@@ -8,13 +8,15 @@
 	export let description: string;
 	export let links: ContactLinkArray;
 
+	export let number: string;
+
 	const text = description.replaceAll('<b>', "<b class='text-transparent'>");
 </script>
 
 <template>
 	<ContactLayout>
 		<Header>
-			<span class="text-lg sm:text-xl md:text-2xl">04</span>
+			<span class="text-lg sm:text-xl md:text-2xl">{number}</span>
 			{title}
 		</Header>
 		<ContactSection text="{text}" links="{links}" />

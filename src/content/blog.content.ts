@@ -1,4 +1,4 @@
-import BlogContent from '$lib/Blog/BlogContent.svelte';
+import BlogContent from '$src/lib/Blog/Blog.svelte';
 
 export default {
 	component: BlogContent,

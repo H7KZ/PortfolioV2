@@ -1,4 +1,4 @@
-import ContactContent from '$lib/Contact/ContactContent.svelte';
+import ContactContent from '$src/lib/Contact/Contact.svelte';
 
 import LinkedIn from '$icons/LinkedIn.svelte';
 import Steam from '$icons/Steam.svelte';

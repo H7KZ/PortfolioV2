@@ -1,4 +1,4 @@
-import TestimonialContent from '$src/lib/Testimonial/TestimonialContent.svelte';
+import TestimonialContent from '$src/lib/Testimonial/Testimonial.svelte';
 
 export default {
 	component: TestimonialContent,

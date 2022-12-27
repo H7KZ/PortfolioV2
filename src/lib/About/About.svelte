@@ -7,12 +7,14 @@
 
 	export let title: string;
 	export let sections: AboutSectionArray;
+
+	export let number: string;
 </script>
 
 <template>
 	<AboutLayout>
 		<Header>
-			<span class="text-lg sm:text-xl md:text-2xl">01</span>
+			<span class="text-lg sm:text-xl md:text-2xl">{number}</span>
 			{title}
 		</Header>
 		<AboutSectionGrid>
