@@ -19,7 +19,7 @@
 >
 	<div class="flex gap-2 font-montserrat">
 		<a href="{experience.firmLink}" target="__blank">
-			<img src="{experience.icon}" alt="{experience.icon}" />
+			<img src="{experience.icon}" alt="{experience.icon}" class="h-[62px] w-auto" />
 		</a>
 		<div class="flex flex-col">
 			<a href="{experience.firmLink}" target="__blank">

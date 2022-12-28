@@ -6,11 +6,11 @@ export default {
 		title: 'MY EXPERIENCE',
 		sections: [
 			{
-				year: '2023',
+				year: '2024',
 				experiences: []
 			},
 			{
-				year: '2022',
+				year: '2023',
 				experiences: [
 					{
 						firm: 'Precismo',
@@ -19,11 +19,28 @@ export default {
 						color: '#1d66f3',
 						position: 'Frontend Developer',
 						time: 'part time',
-						start_date: new Date('2022-12-19'),
+						start_date: new Date('2023-1-2'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
 						skills: ['HTML', 'SCSS', 'JS', 'SvelteKit', 'ReactJS', 'Python']
 					},
+					{
+						firm: 'Weedly',
+						firmLink: 'https://weedly.cz/',
+						icon: '/logos/weedly.png',
+						color: '#00ff84',
+						position: 'Frontend Developer',
+						time: 'contract',
+						start_date: new Date('2022-12-28'),
+						end_date: null,
+						location: 'Prague, Czech Republic',
+						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
+					}
+				]
+			},
+			{
+				year: '2022',
+				experiences: [
 					{
 						firm: 'HAXAGON',
 						firmLink: 'https://haxagon.cz/',
@@ -34,7 +51,7 @@ export default {
 						start_date: new Date('2022-10-01'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'SCSS', 'UnoCSS', 'JS', 'TS', 'VueJS']
+						skills: ['HTML', 'SCSS', 'UnoCSS', 'TS', 'VueJS']
 					},
 					{
 						firm: 'TV NOVA',
@@ -58,7 +75,7 @@ export default {
 						start_date: new Date('2022-01-01'),
 						end_date: new Date('2022-03-31'),
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'TailwindCSS', 'JS', 'TS', 'SvelteKit']
+						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
 					}
 				]
 			}
