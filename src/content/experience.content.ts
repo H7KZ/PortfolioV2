@@ -71,7 +71,7 @@ export default {
 						icon: '/logos/Froneb.svg',
 						color: '#2CDC7B',
 						position: 'Frontend Developer',
-						time: 'part time',
+						time: 'contract',
 						start_date: new Date('2022-01-01'),
 						end_date: new Date('2022-03-31'),
 						location: 'Prague, Czech Republic',
