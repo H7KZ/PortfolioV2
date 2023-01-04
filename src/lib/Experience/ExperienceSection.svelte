@@ -3,11 +3,11 @@
 	import Months from '$src/utils/Months.util';
 	export let experience: Experience;
 	const monthDiff = () => {
-		return (
+		return new Date(
 			Math.abs(
-				(experience.start_date?.getMonth() ?? new Date().getMonth()) -
-					(experience.end_date?.getMonth() ?? new Date().getMonth())
-			) + 1
+				(experience.start_date?.getTime() ?? new Date().getTime()) -
+					(experience.end_date?.getTime() ?? new Date().getTime())
+			)
 		);
 	};
 </script>
@@ -49,8 +49,8 @@
 						  experience.end_date?.getFullYear()
 						: 'now'}
 					•
-					{monthDiff()}
-					{monthDiff() === 1 ? 'month' : 'months'}
+					{monthDiff().getMonth() + 1}
+					{monthDiff().getMonth() + 1 === 1 ? 'month' : 'months'}
 				</h5>
 			{/if}
 			<h5>{experience.location}</h5>
