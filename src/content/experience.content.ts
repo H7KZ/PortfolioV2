@@ -25,10 +25,10 @@ export default {
 						skills: ['HTML', 'SCSS', 'JS', 'SvelteKit', 'ReactJS', 'Python']
 					},
 					{
-						firm: 'Weedly',
-						firmLink: 'https://weedly.cz/',
-						icon: '/logos/weedly.png',
-						color: '#00ff84',
+						firm: 'Froneb',
+						firmLink: 'https://froneb.com/',
+						icon: '/logos/Froneb.svg',
+						color: '#2CDC7B',
 						position: 'Frontend Developer',
 						time: 'contract',
 						start_date: new Date('2022-12-28'),
