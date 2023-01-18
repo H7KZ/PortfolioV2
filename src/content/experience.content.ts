@@ -32,7 +32,7 @@ export default {
 						position: 'Frontend Developer',
 						time: 'contract',
 						start_date: new Date('2022-12-28'),
-						end_date: null,
+						end_date: new Date('2023-1-18'),
 						location: 'Prague, Czech Republic',
 						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
 					}
