@@ -1,6 +1,5 @@
 <script lang="ts">
 	import NavbarLinks from '$content/navbar.content';
-	import { page } from '$app/stores';
 </script>
 
 <template>
@@ -10,7 +9,7 @@
 		<h1 class="font-extrabold text-4xl"><a href="/">KOMÍNEKJAN</a></h1>
 
 		<div class="flex flex-row gap-10 text-xl font-semibold xl:gap-16">
-			{#each NavbarLinks[$page.url.pathname.includes('blog') ? 'blog' : 'default'] as link, i}
+			{#each NavbarLinks['default'] as link, i}
 				<a href="{link.href}" class="flex items-start gap-1 transition-all  hover:text-hover">
 					<span class="text-xs sm:text-sm md:text-md">0{i + 1}</span>
 					{link.title}

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import NavbarLinks from '$content/navbar.content';
-	import { page } from '$app/stores';
 
 	export let show: boolean;
 </script>
@@ -11,7 +10,7 @@
 	flex flex-col justify-start pt-32 items-center gap-10 font-unbounded text-xl text-textWhite font-semibold
 	{show ? 'show' : 'hide'}"
 	>
-		{#each NavbarLinks[$page.url.pathname.includes('blog') ? 'blog' : 'default'] as link, i}
+		{#each NavbarLinks['default'] as link, i}
 			<a
 				href="{link.href}"
 				class="flex items-start gap-1 transition-all  hover:text-hover"
