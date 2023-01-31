@@ -1,18 +1,17 @@
 import { usePocketBase } from '$kominekjan/PocketBase';
 import type { RequestEvent } from '@sveltejs/kit';
+import Axios from 'axios';
 
 export default async function log(
 	event: RequestEvent<Partial<Record<string, string>>, string | null>
 ): Promise<void> {
 	let geo = {};
 
-	if (event.request.headers.get('X-Forwarded-For')) {
-		await fetch(
-			`http://ip-api.com/json/${event.request.headers.get('X-Forwarded-For')?.toString()}?fields=66846719`
-		)
-			.then((res) => res.json())
-			.then((json) => (geo = json));
-	}
+	await Axios.get(
+		`http://ip-api.com/json/${event.request.headers.get('X-Forwarded-For')}?fields=66846719`
+	).then((response) => {
+		if (response.data.status === 'success') geo = response.data;
+	});
 
 	usePocketBase
 		.collection('logs')
