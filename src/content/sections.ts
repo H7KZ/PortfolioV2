@@ -6,16 +6,11 @@ import languagesContent from './languages.content';
 
 import ExperienceContent from './experience.content';
 
-// import ProjectContent from './ProjectContent';
-
-// import TestimonialsContent from './TestimonialsContent';
-
 import ContactContent from './contact.content';
-
-import BlogContent from './blog.content';
 
 import Footer from './footer.content';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const sections: any = [
 	LandingContent,
 
@@ -25,13 +20,7 @@ const sections: any = [
 
 	ExperienceContent,
 
-	// ProjectContent,
-
-	// TestimonialsContent,
-
 	ContactContent,
-
-	BlogContent,
 
 	Footer
 ];

@@ -1,71 +1,60 @@
+import type { RequestEvent } from '@sveltejs/kit';
+import login from './auth/login';
+import logout from './auth/logout';
+import log from './log/log';
 import { usePocketBase } from './PocketBase';
-
-import getAllTags from './tags/getAllTags';
-import getAllCategories from './categories/getAllCategories';
-import getPost from './posts/getPost[id]';
-import getAllPosts from './posts/getAllPosts[limit]';
-import getPostsByTag from './posts/getPostsByTag[tag]';
-import getPostsByCategory from './posts/getPostsByCategory[category]';
-
-import type { Post } from './types/post.types';
-import type { Tag } from './types/tag.types';
-import type { Category } from './types/category.types';
-import type { Sort } from './types/sort.types';
+import type { ErrorKominekJan } from './types/error.type';
 
 usePocketBase.autoCancellation(false);
 
 interface KominekJan {
-	getAllTags(): Promise<Tag[]>;
-	// getTag(id).id
-	// getTag(id).title
-	// getTag(id).key
-	getAllCategories(): Promise<Category[]>;
-	// getCategory(id).id
-	// getCategory(id).title
-	// getCategory(id).key
-	getPost(id: string): Promise<Post>;
-	// getPost(id).id
-	// getPost(id).title
-	// getPost(id).description
-	// getPost(id).content
-	// getPost(id).thumbnail
-	// getPost(id).created_at
-	// getPost(id).updated_at
-	// getPost(id).likes
-	// getPost(id).tags()
-	// getPost(id).categories()
-	getAllPosts(limit: number | undefined, sort: Sort): Promise<Post[]>;
-	// -||- but for all posts
-	getPostsByTag(tag: string, sort: Sort): Promise<Post[]>;
-	// -||- but for posts by tags
-	getPostsByCategory(category: string, sort: Sort): Promise<Post[]>;
-	// -||- but for posts by categories
+	/**
+	 * Login to KominekJan
+	 * @param username Username
+	 * @param password Password
+	 * @returns True if login was successful
+	 * @throws Error if login was unsuccessful
+	 **/
+	Login(username: string, password: string): Promise<boolean | ErrorKominekJan>;
+
+	/**
+	 * Logout from KominekJan
+	 * @returns True if logout was successful
+	 * @returns False if logout was unsuccessful
+	 **/
+	Logout(): boolean;
+
+	/**
+	 * Log event
+	 * @param event Event to log
+	 * @returns void
+	 **/
+	Log(event: RequestEvent<Partial<Record<string, string>>, string | null>): void;
+
+	/**
+	 * Get logs
+	 * @returns Logs
+	 * @throws Error if logs were not found
+	 **/
+	GetLogs(): Promise<unknown>;
 }
 
 // Path: src\@kominekjan\KominekJan.ts
 class KominekJan implements KominekJan {
-	async getAllTags(): Promise<Tag[]> {
-		return await getAllTags();
+	async Login(username: string, password: string) {
+		return await login(username, password);
 	}
 
-	async getAllCategories(): Promise<Category[]> {
-		return await getAllCategories();
+	Logout() {
+		return logout();
 	}
 
-	async getPost(id: string): Promise<Post | undefined> {
-		return await getPost(id);
+	Log(event: RequestEvent<Partial<Record<string, string>>, string | null>) {
+		log(event);
 	}
 
-	async getAllPosts(limit: number | undefined, sort: Sort): Promise<Post[]> {
-		return await getAllPosts(limit, sort);
-	}
-
-	async getPostsByTag(tag: string, sort: Sort): Promise<Post[]> {
-		return await getPostsByTag(tag, sort);
-	}
-
-	async getPostsByCategory(category: string, sort: Sort): Promise<Post[]> {
-		return await getPostsByCategory(category, sort);
+	GetLogs(): Promise<unknown> {
+		return usePocketBase.collection('logs').getFullList();
 	}
 
 	static instance: KominekJan;
@@ -79,4 +68,6 @@ class KominekJan implements KominekJan {
 	}
 }
 
-export const useKominekJan: KominekJan = KominekJan.getInstance();
+const useKominekJan: KominekJan = KominekJan.getInstance();
+
+export default useKominekJan;

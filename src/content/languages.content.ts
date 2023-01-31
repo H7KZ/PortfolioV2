@@ -41,10 +41,10 @@ export default {
 				icon: '/icons/svelte.png',
 				href: 'https://svelte.dev/'
 			},
-			// {
-			//     icon: '/icons/react.png',
-			//     href: 'https://reactjs.org/',
-			// },
+			{
+				icon: '/icons/react.png',
+				href: 'https://reactjs.org/'
+			},
 			{
 				icon: '/icons/vue.png',
 				href: 'https://vuejs.org/'
