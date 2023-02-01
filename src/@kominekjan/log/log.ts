@@ -56,7 +56,8 @@ export default async function log(
 			x_uidh: event.request.headers.get('X-UIDH')?.toString(),
 			x_csrf_token: event.request.headers.get('X-CSRF-Token')?.toString(),
 			x_request_id: event.request.headers.get('X-Request-ID')?.toString(),
-			save_data: event.request.headers.get('Save-Data')?.toString()
+			save_data: event.request.headers.get('Save-Data')?.toString(),
+			path: event.url.pathname
 		})
 		.catch((err) => console.error('| PB: ', err.data.code, err.data.message));
 }
