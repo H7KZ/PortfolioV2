@@ -3,7 +3,7 @@ import Footer from '$components/common/Footer.svelte';
 export default {
 	component: Footer,
 	props: {
-		copyright: 'Copyright © 2022 Komínek Jan. All rights reserved',
+		copyright: 'Copyright © 2023 Komínek Jan. All rights reserved',
 		links: [
 			{
 				name: 'Home',
