@@ -19,7 +19,7 @@ export default {
 						color: '#1d66f3',
 						position: 'Frontend Developer',
 						time: 'part time',
-						start_date: new Date('2023-1-2'),
+						start_date: new Date('2023-01-02'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
 						skills: ['HTML', 'SCSS', 'JS', 'SvelteKit', 'ReactJS', 'Python']
@@ -32,7 +32,7 @@ export default {
 						position: 'Frontend Developer',
 						time: 'contract',
 						start_date: new Date('2022-12-28'),
-						end_date: new Date('2023-1-18'),
+						end_date: new Date('2023-01-18'),
 						location: 'Prague, Czech Republic',
 						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
 					}
