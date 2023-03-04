@@ -38,6 +38,14 @@ export default {
 				href: 'https://tailwindcss.com/'
 			},
 			{
+				icon: '/icons/express.png',
+				href: 'https://expressjs.com/'
+			},
+			{
+				icon: '/icons/nodejs.png',
+				href: 'https://nodejs.org/en/'
+			},
+			{
 				icon: '/icons/svelte.png',
 				href: 'https://svelte.dev/'
 			},
@@ -60,6 +68,26 @@ export default {
 			{
 				icon: '/icons/git.png',
 				href: 'https://git-scm.com/'
+			},
+			{
+				icon: '/icons/tux.png',
+				href: 'https://www.linux.org/'
+			},
+			{
+				icon: '/icons/mui.png',
+				href: 'https://mui.com/'
+			},
+			{
+				icon: '/icons/playwright.png',
+				href: 'https://playwright.dev/'
+			},
+			{
+				icon: '/icons/slack.png',
+				href: 'https://slack.com/'
+			},
+			{
+				icon: '/icons/teams.png',
+				href: 'https://teams.microsoft.com/'
 			},
 			{
 				icon: '/icons/github.png',
@@ -85,10 +113,6 @@ export default {
 				icon: '/icons/figma.png',
 				href: 'https://www.figma.com/'
 			},
-			{
-				icon: '/icons/tux.png',
-				href: 'https://www.linux.org/'
-			}
 		]
 	}
 };

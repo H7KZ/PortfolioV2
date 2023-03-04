@@ -4,31 +4,37 @@
 		<meta charset="utf-8" />
 
 		<script type="text/javascript">
-			window.smartlook ||
-				(function (d) {
-					var o = (smartlook = function () {
-							o.api.push(arguments);
-						}),
-						h = d.getElementsByTagName('head')[0];
-					var c = d.createElement('script');
-					o.api = new Array();
-					c.async = true;
-					c.type = 'text/javascript';
-					c.charset = 'utf-8';
-					c.src = 'https://web-sdk.smartlook.com/recorder.js';
-					h.appendChild(c);
-				})(document);
-			smartlook('init', '7a6dd8a39f7e60a2365da5560ac315f4cd1fe333', { region: 'eu' });
-
-			function hideConsent() {
-				localStorage.setItem('consent', false);
+			function StartSmartlook() {
+				window.smartlook ||
+					(function (d) {
+						var o = (smartlook = function () {
+								o.api.push(arguments);
+							}),
+							h = d.getElementsByTagName('head')[0];
+						var c = d.createElement('script');
+						o.api = new Array();
+						c.async = true;
+						c.type = 'text/javascript';
+						c.charset = 'utf-8';
+						c.src = 'https://web-sdk.smartlook.com/recorder.js';
+						h.appendChild(c);
+					})(document);
+				smartlook('init', '7a6dd8a39f7e60a2365da5560ac315f4cd1fe333', { region: 'eu' });
+			}
+			
+			function hideConsent(bool = true) {
+				localStorage.setItem('consent', bool);
 				document.getElementById('consent').style.display = 'none';
+
+				if (bool) {
+					StartSmartlook();
+				}
 			}
 
 			window.addEventListener('load', function () {
-				if (localStorage.getItem('consent') == 'false') {
-					document.getElementById('consent').style.display = 'none';
-				}
+				if (localStorage.getItem('consent') == 'true') return StartSmartlook();
+
+				if (localStorage.getItem('consent') == null) return document.getElementById('consent').style.display = 'flex';
 			});
 		</script>
 
@@ -87,8 +93,9 @@
 		<div>
 			<div>%sveltekit.body%</div>
 			<div
-				class="fixed flex flex-col justify-center items-center text-center gap-4 bottom-0 left-0 h-auto py-4 w-screen bg-[#131313] font-quicksand font-semibold text-sm text-textWhite md:text-base md:flex-row"
+				class="fixed flex-col justify-center items-center text-center gap-4 bottom-0 left-0 h-auto py-4 w-screen bg-[#131313] font-quicksand font-semibold text-sm text-textWhite md:text-base md:flex-row"
 				id="consent"
+				style="display: none;"
 			>
 				<h2 class="px-3">
 					By using this site you are agreeing to the use of
@@ -99,7 +106,8 @@
 						>Smartlook analytics</a
 					>
 				</h2>
-				<button class="px-5 py-1 bg-[#daa617] rounded" onclick="hideConsent()">Close</button>
+				<button class="px-5 py-1 bg-[#179c2d] rounded" onclick="hideConsent(true)">Accept</button>
+				<button class="px-5 py-1 bg-[#b48a14] rounded" onclick="hideConsent(false)">Cancel</button>
 			</div>
 		</div>
 	</body>

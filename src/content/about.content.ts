@@ -8,17 +8,17 @@ export default {
 			{
 				title: 'In general',
 				description:
-					'Hello, my name is <b>Jan Komínek</b> and I am an <b>open-minded entrepreneur that focuses on frontend web development</b>. In parallel I am <b>studying at industrial high school a field of cyber security</b>.'
+					'<b>Greetings</b>, my name is <b>Jan Komínek</b>, and I am a <b>driven entrepreneur</b> with a <b>keen focus on front-end web development</b>. Concurrently, I am pursuing my <b>studies in the field of cybersecurity at an industrial high school</b>. As a <b>dedicated and open-minded individual</b>, I am committed to furthering my <b>expertise in both areas</b> and staying abreast of the <b>latest industry trends and best practices</b>.'
 			},
 			{
 				title: 'Frontend development',
 				description:
-					'<b>My interest in web development started in 2020</b>, since then I have learned every aspect of frontend web development and I have been <b>constantly learning new technologies</b>. I have a <b>lot experience in HTML, CSS, TailwindCSS, JavaScript, TypeScript, SvelteKit and VueJS</b>.'
+					'In 2020, my <b>passion for web development</b> was ignited, and I have since devoted myself to <b>mastering every aspect of front-end web development</b>. Through self-study and ongoing professional development, I have gained <b>significant proficiency in a range of cutting-edge technologies</b>, including <b>HTML5, CSS3, TailwindCSS, JavaScript, TypeScript, SvelteKit, VueJS and ReactJS</b>. I am committed to <b>staying current with emerging trends and best practices</b> in the field, and I am constantly <b>expanding my skill set</b> to provide the <b>highest level of service to my clients</b>.'
 			},
 			{
 				title: 'Learn more',
 				description:
-					'You can read more about me on my <b><a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="/social/linkedin">LinkedIn</a></b> or <b><a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="/social/github">GitHub</a></b>.'
+					'<b>For more information</b> about my background and experience, I invite you to <b>visit my <a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" href="/social/linkedin">LinkedIn</a> and <a target="__blank" style="text-decoration-line: underline; text-decoration-color: #db1a7b;" class="underline" href="/social/github">GitHub</a> profiles</b>. There, you can find a comprehensive <b>overview of my skills, work history, and projects</b>, as well as <b>recommendations from colleagues and clients</b>. Thank you for your consideration, and <b>I look forward</b> to the opportunity to discuss <b>how I can contribute to your project or organization</b>.'
 			}
 		]
 	}

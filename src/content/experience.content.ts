@@ -22,7 +22,7 @@ export default {
 						start_date: new Date('2023-01-02'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'SCSS', 'JS', 'SvelteKit', 'ReactJS', 'Python']
+						skills: ['HTML', 'CSS', 'JS', 'ReactJS', 'MaterialUI', 'Playwright']
 					},
 					{
 						firm: 'Froneb',
