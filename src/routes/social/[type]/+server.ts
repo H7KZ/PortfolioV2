@@ -2,7 +2,7 @@ import { redirect, type RequestEvent, type RequestHandler } from '@sveltejs/kit'
 
 const socials: Map<string, string> = new Map([
 	['github', 'https://github.com/H7KZ'],
-	['linkedin', 'https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209'],
+	['linkedin', 'https://www.linkedin.com/in/jan-kominek/'],
 	['steam', 'https://steamcommunity.com/id/H7KZ'],
 	['discord', 'https://discord.com/users/466867931821637632'],
 	['instagram', 'https://www.instagram.com/jan_kominek'],
