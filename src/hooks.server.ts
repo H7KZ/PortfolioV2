@@ -7,7 +7,7 @@ const { Log } = useKominekJan;
 const logger: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
 
-	Log(event);
+	// Log(event);
 
 	return response;
 };

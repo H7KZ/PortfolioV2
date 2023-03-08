@@ -112,7 +112,7 @@ export default {
 			{
 				icon: '/icons/figma.png',
 				href: 'https://www.figma.com/'
-			},
+			}
 		]
 	}
 };
