@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+	safelist: [
+		'text-[72px]',
+		'leading-[72px]',
+		'h-[72px]'
+	],
 	theme: {
 		fontFamily: {
 			quicksand: ['Quicksand', 'sans-serif'],
@@ -8,7 +13,7 @@ module.exports = {
 			unbounded: ['Unbounded', 'sans-serif']
 		},
 		colors: {
-			textWhite: '#F1F1F1',
+			textWhite: '#e6e6e6',
 			line: '#FFFFFF1A',
 			background: '#1D1D1D',
 			hover: '#C92050',

@@ -6,6 +6,8 @@ import languagesContent from './languages.content';
 
 import ExperienceContent from './experience.content';
 
+import statsContent from './statistics.content';
+
 import ContactContent from './contact.content';
 
 import Footer from './footer.content';
@@ -19,6 +21,8 @@ const sections: any = [
 	languagesContent,
 
 	ExperienceContent,
+
+	statsContent,
 
 	ContactContent,
 
