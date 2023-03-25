@@ -1,13 +1,11 @@
 import { sequence } from '@sveltejs/kit/hooks';
 import type { Handle } from '@sveltejs/kit';
-import useKominekJan from '$kominekjan/KominekJan';
-
-const { Log } = useKominekJan;
+import Axios from 'axios';
 
 const logger: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
 
-	// Log(event);
+	Axios.post('https://portfolio-api-9e7f.onrender.com/count/plus/portfolio');
 
 	return response;
 };
