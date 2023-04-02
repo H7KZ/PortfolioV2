@@ -2,7 +2,7 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
-	import BarLoader from '$src/lib/components/common/BarLoader.svelte';
+	import BarLoader from '$src/lib/components/effects/BarLoader.svelte';
 </script>
 
 <template>
@@ -12,14 +12,9 @@
 	>
 		<div class="absolute top-0 left-0 w-screen h-screen flex justify-center items-center"></div>
 		<div
-			class="w-1/2 flex shrink-0 flex-col justify-center items-center text-center gap-1 z-2 md:w-1/4"
+			class="w-1/2 flex shrink-0 flex-col justify-center items-center text-center gap-6 z-2 md:w-1/4"
 		>
-			<h1
-				class="font-montserrat font-bold text-[12rem] leading-none text-textWhite md:text-[16rem]"
-			>
-				KJ
-			</h1>
-			<h1 class="font-quicksand font-bold text-xl gradient-sub clip-text">Loading...</h1>
+			<h1 class="font-quicksand font-bold text-5xl gradient-sub clip-text h-16">Loading...</h1>
 			<BarLoader color="#ff2e2e" size="64" />
 		</div>
 	</div>

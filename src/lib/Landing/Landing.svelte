@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BubbleEffect from '$lib/components/common/BubbleEffect.svelte';
+	import BubbleEffect from '$src/lib/components/effects/BubbleEffect.svelte';
 	import WritingTextEffect from '$lib/components/common/WritingTextEffect.svelte';
 
 	export let text: string[] = ['Frontend Developer', 'Backend Developer', 'UI/UX Designer'];

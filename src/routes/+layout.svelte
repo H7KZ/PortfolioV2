@@ -7,6 +7,7 @@
 
 	import Navbar from '$components/common/navbar/Navbar.svelte';
 	import Loading from '$src/lib/Loading/Loading.svelte';
+	// import TopologyEffect from '$src/lib/components/effects/TopologyEffect.svelte';
 
 	import 'aos/dist/aos.css';
 	import '$css/global.css';
@@ -22,6 +23,7 @@
 	{#if !$loaded}
 		<Loading />
 	{/if}
+	<!-- <TopologyEffect /> -->
 	<Navbar />
 	<div class="w-full h-auto">
 		<slot />
