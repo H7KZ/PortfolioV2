@@ -10,7 +10,7 @@
 
 		<div class="flex flex-row gap-10 text-xl font-semibold xl:gap-16">
 			{#each NavbarLinks['default'] as link, i}
-				<a href="{link.href}" class="flex items-start gap-1 transition-all  hover:text-hover">
+				<a href="{link.href}" class="flex items-start gap-1 transition-all hover:text-hover">
 					<span class="text-xs sm:text-sm md:text-md">0{i + 1}</span>
 					{link.title}
 				</a>

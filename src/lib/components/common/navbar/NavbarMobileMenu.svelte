@@ -13,7 +13,7 @@
 		{#each NavbarLinks['default'] as link, i}
 			<a
 				href="{link.href}"
-				class="flex items-start gap-1 transition-all  hover:text-hover"
+				class="flex items-start gap-1 transition-all hover:text-hover"
 				on:click="{() => (show = false)}"
 			>
 				<span class="text-xs sm:text-sm md:text-md">0{i + 1}</span>

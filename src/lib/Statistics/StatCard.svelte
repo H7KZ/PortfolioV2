@@ -1,23 +1,15 @@
 <script lang="ts">
-    export let title: string;
-    export let count: number;
-    export let titleFirst: boolean = false;
+	export let title: string;
+	export let count: number;
 </script>
 
 <template>
-    <div class="flex justify-center items-center gap-6">
-        {#if titleFirst}
-            <h1 class="font-montserrat text-lg text-end text-textWhite font-bold uppercase">
-                {@html title}
-            </h1>
-        {/if}
-        <h1 class="text-7xl overflow-hidden font-unbounded font-bold text-hover">
-            {Intl.NumberFormat('en-US', { notation: "compact",maximumFractionDigits: 2 }).format(count)}
-        </h1>
-        {#if !titleFirst}
-            <h1 class="font-montserrat text-lg text-start text-textWhite font-bold uppercase">
-                {@html title}
-            </h1>
-        {/if}
-    </div>
+	<div class="w-min flex flex-col items-center gap-1 text-center">
+		<h1 class="text-6xl overflow-hidden font-unbounded font-bold text-hover">
+			{Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(count)}
+		</h1>
+		<h1 class="font-montserrat text-sm text-[#868686] font-bold uppercase">
+			{@html title}
+		</h1>
+	</div>
 </template>

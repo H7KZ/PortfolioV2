@@ -12,6 +12,18 @@ export default {
 			{
 				year: '2023',
 				experiences: [
+					// {
+					// 	firm: 'FIGURIQUE',
+					// 	firmLink: 'https://figurique.com/',
+					// 	icon: '/logos/Figurique.svg',
+					// 	color: '#d99d29',
+					// 	position: 'Founder | FullStack Developer',
+					// 	time: 'part time',
+					// 	start_date: new Date('2023-04-25'),
+					// 	end_date: null,
+					// 	location: 'Prague, Czech Republic',
+					// 	skills: ['HTML5', 'TailwindCSS', 'FlowBiteUI', 'SvelteKit', 'TS', 'ExpressJS', 'MongoDB']
+					// },
 					{
 						firm: 'Precismo',
 						firmLink: 'https://precismo.com/',
@@ -22,7 +34,7 @@ export default {
 						start_date: new Date('2023-01-02'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'CSS', 'JS', 'ReactJS', 'MaterialUI', 'Playwright']
+						skills: ['HTML5', 'CSS', 'JS', 'ReactJS', 'MaterialUI', 'Playwright']
 					},
 					{
 						firm: 'Froneb',
@@ -34,7 +46,7 @@ export default {
 						start_date: new Date('2022-12-28'),
 						end_date: new Date('2023-01-18'),
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
+						skills: ['HTML5', 'TailwindCSS', 'TS', 'SvelteKit']
 					}
 				]
 			},
@@ -51,7 +63,7 @@ export default {
 						start_date: new Date('2022-10-01'),
 						end_date: null,
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'SCSS', 'UnoCSS', 'TS', 'VueJS']
+						skills: ['HTML5', 'SCSS', 'UnoCSS', 'TS', 'VueJS']
 					},
 					{
 						firm: 'TV NOVA',
@@ -75,7 +87,7 @@ export default {
 						start_date: new Date('2022-01-01'),
 						end_date: new Date('2022-03-31'),
 						location: 'Prague, Czech Republic',
-						skills: ['HTML', 'TailwindCSS', 'TS', 'SvelteKit']
+						skills: ['HTML5', 'TailwindCSS', 'TS', 'SvelteKit']
 					}
 				]
 			}

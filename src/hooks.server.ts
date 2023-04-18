@@ -5,7 +5,7 @@ const logger: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
 
 	event.fetch('https://portfolio-api-9e7f.onrender.com/count/plus/portfolio', {
-		method: 'POST',
+		method: 'POST'
 	});
 
 	return response;

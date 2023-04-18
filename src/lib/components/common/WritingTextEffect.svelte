@@ -9,7 +9,7 @@
 	let typeIndex: number = 1;
 	let backwards: boolean = true;
 	let intervalTimer: number = 90;
-	let interval: string | number | NodeJS.Timeout | undefined;
+	let interval: number | undefined;
 	let stop: boolean = false;
 
 	setTimeout(() => {
@@ -17,7 +17,7 @@
 	}, firstWaitInterval);
 
 	function writingEffect() {
-		clearInterval(interval);
+		clearInterval(interval as number);
 
 		if (backwards) {
 			actualText = actualText.slice(0, -1);

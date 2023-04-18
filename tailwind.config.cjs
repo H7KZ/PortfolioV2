@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-	safelist: [
-		'text-[72px]',
-		'leading-[72px]',
-		'h-[72px]'
-	],
+	safelist: ['text-[72px]', 'leading-[72px]', 'h-[72px]'],
 	theme: {
 		fontFamily: {
 			quicksand: ['Quicksand', 'sans-serif'],

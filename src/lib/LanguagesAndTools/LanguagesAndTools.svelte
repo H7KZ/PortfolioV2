@@ -14,7 +14,7 @@
 
 <template>
 	<LanguageAndToolsLayout>
-		<Header smaller="{true}">
+		<Header smaller>
 			<span class="text-sm sm:text-base md:text-lg">{number}</span>
 			{title}
 		</Header>
