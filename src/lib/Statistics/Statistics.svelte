@@ -19,16 +19,6 @@
 		rejectUnauthorized: false
 	});
 
-	let countVisits = 2701;
-
-	socket.on('counter:count:change', (c) => {
-		countVisits = c;
-	});
-
-	socket.on('counter:count:load', (c) => {
-		countVisits = c;
-	});
-
 	let countLines = 29830;
 	let countCollabs = 22;
 	let countPRs = 115;
@@ -74,11 +64,16 @@
 			{title}
 		</Header>
 		<div class="flex flex-row justify-center gap-16 flex-wrap">
-			<StatCard title="<i>People visited websites I helped to create</i>" count="{countVisits}" />
 			<StatCard title="<i>Lines of code written</i>" count="{countLines}" />
 			<StatCard title="<i>Colleagues I collaborated with</i>" count="{countCollabs}" />
 			<StatCard title="<i>Pull requests opened and merged</i>" count="{countPRs}" />
 			<StatCard title="<i>Production commits pushed</i>" count="{countCommits}" />
+		</div>
+		<div class="flex flex-col gap-8 items-center">
+			<Header extraSmall>
+				COMMITS OVER THE LAST YEAR
+			</Header>
+			<figure><embed src="https://wakatime.com/share/@H7KZ/51e0a4fc-a853-4a31-95e6-1f3208026bd7.svg" /></figure>
 		</div>
 	</StatisticsLayout>
 </template>
